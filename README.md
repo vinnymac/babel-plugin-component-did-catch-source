@@ -70,6 +70,10 @@ require('babel-core').transform('code', {
 
 None yet
 
+## Notes
+
+This plugin will likely only work with v16 of React.
+
 ## License
 
 MIT
