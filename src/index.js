@@ -12,9 +12,10 @@ export default function({ types: t }) {
           )
           if (properties && properties[0].key.name === 'componentStack' && variableDeclaration) {
             const sourceObjName = variableDeclaration.init.object.name
+            const stackVarName = variableDeclaration.id.name
             // Modify `componentDidCatch` second argument to add a single line
             componentDidCatchSecondArgPath.replaceWithSourceString(`{
-              componentStack: stack !== null ? stack : '',
+              componentStack: ${stackVarName} !== null ? ${stackVarName} : '',
               source: ${sourceObjName}.source,
             }`)
           }
