@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-component-did-catch-source",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Babel plugin to add source fiber for use in componentDidCatch",
   "repository": "https://github.com/vinnymac/babel-plugin-component-did-catch-source",
   "main": "lib/index.js",
