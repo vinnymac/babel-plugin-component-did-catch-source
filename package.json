@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Babel plugin to add source fiber for use in componentDidCatch",
   "repository": "https://github.com/vinnymac/babel-plugin-component-did-catch-source",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Vincent Taverna <vinnymac@gmail.com>",
   "license": "MIT",
   "keywords": [
