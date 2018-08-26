@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-component-did-catch-source",
+  "version": "1.0.0",
+  "description": "Babel plugin to add source fiber for use in componentDidCatch",
+  "repository": "https://github.com/vinnymac/babel-plugin-component-did-catch-source",
+  "main": "index.js",
+  "author": "Vincent Taverna <vinnymac@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "react",
+    "debug",
+    "error",
+    "componentDidCatch"
+  ],
+  "bugs": {
+    "url": "https://github.com/vinnymac/babel-plugin-component-did-catch-source/issues"
+  },
+  "scripts": {
+    "prebuild": "rm -rf lib/",
+    "build": "babel src --out-dir lib",
+    "version": "npm run build && pkgfiles"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-rc.3",
+    "@babel/core": "7.0.0-rc.3",
+    "@babel/preset-env": "7.0.0-rc.3",
+    "pkgfiles": "^2.3.2"
+  }
+}
